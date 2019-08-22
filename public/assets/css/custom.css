@@ -1,0 +1,108 @@
+
+
+/*modal part */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Sit on top */
+  padding-top: 150px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-contentt {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 55%;
+  /* max-width:600px; */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+@media screen and (max-width: 530px) {
+  .modal-contentt {
+    width:85%;
+  }
+}
+
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.closeIcon {
+  color: #eee;
+  float: right;
+  marign: 15px;
+  padding:15px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeIcon:hover,
+.closeIcon:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+
+.modal-header {
+  padding: 45px 20px 10px 20px;
+  /* background-color: #333333;
+  color: #ffffff; */
+}
+
+.modal-body {padding: 10px 40px 10px 40;}
+
+.modal-footer {
+  padding: 10px 10px;
+  background-color: #ffffff;
+  color: white;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 40px;
+}
+@media screen and (max-width: 530px) {
+  .avatar{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 10px;
+  }
+  .modal-header {
+    padding: 30px 20px 10px 20px;
+    /* background-color: #333333;
+    color: #ffffff; */
+  }
+  .modal-body {padding: 20px 20px;}
+    
+}
+
