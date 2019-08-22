@@ -1,0 +1,122 @@
+$sidebar-bg-color: #30353e;
+
+.sidebar {
+  top: 70px;
+  width: 250px;
+  min-width: 250px;
+  z-index: 10;
+  background: $sidebar-bg-color;
+  bottom: 0;
+  margin-top: 0;
+  padding-bottom: 30px;
+  position: fixed;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+
+  transition: all 0.3s;
+
+  .user-box {
+    ul li a {
+      color: $gray-500;
+
+      &:hover {
+        color: $primary;
+      }
+
+      i { font-size: 14px; }
+    }
+
+    h5 a {
+      color: $gray-500;
+      font-size: 15px;
+      text-decoration: none;
+      &:hover {
+        color: $primary;
+      }
+    }
+
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.sidebar .nav-link {
+  font-weight: 400;
+  color: $gray-500;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  color: $gray-300;
+}
+
+.sidebar .nav-link.active {
+  background-color: lighten($sidebar-bg-color, 5%);
+}
+
+.sidebar .sub-menu li {
+  padding-left: 40px;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.sidebar ul li a i {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 17px;
+  margin-right: 13px;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+}
+
+.sidebar .dropdown-menu {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+
+/* closed state */
+.sidebar .nav-item .nav-link[aria-expanded="false"]::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+  font-weight: 900;
+}
+
+/* open state */
+.sidebar .nav-item .nav-link[aria-expanded="true"] {
+  color: $gray-300;
+}
+
+.sidebar .nav-item .nav-link[aria-expanded="true"]::after {
+  content: "\f0d8";
+  font-family: "Font Awesome 5 Free";
+  display: inline;
+  text-align: right;
+  padding-left: 5px;
+  font-weight: 900;
+}

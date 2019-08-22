@@ -1,0 +1,41 @@
+
+// Body
+$body-bg: #f5f8fa;
+$primary: #179970;
+
+// Typography
+//$font-family-base: "Roboto", sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+//$headings-font-family: "Poppins";
+
+// Buttons
+$btn-padding-y: .75rem !default;
+$btn-padding-x: 1.25rem !default;
+$btn-line-height: 1.125;
+
+// Breadcrumbs
+$breadcrumb-bg: none;
+$breadcrumb-padding-y: 0;
+$breadcrumb-padding-x: 3px;
+//$breadcrumb-item-padding: 0.7rem;
+//$breadcrumb-divider: '-';
+
+// Tables
+$table-accent-bg: #f5f8fa;
+
+// Cards
+$card-spacer-y: 1.2rem !default;
+
+// Tabs
+$nav-tabs-link-active-color: $primary;
+$nav-tabs-link-active-bg: unset;
+//$nav-tabs-link-active-border-color: none;
+//$nav-tabs-link-hover-border-color: unset;
+
+// List Groups
+$list-group-border-color: $body-bg;
+$list-group-hover-bg: $body-bg;
+
+// Nav
+$nav-link-padding-x: 0.9rem;
